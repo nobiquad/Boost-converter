@@ -1,5 +1,23 @@
 # Przetwornica Boost 10W sterowana przez STM32
-Układ podnosi napiecie z 5V DC do max 24V sterowany za pomocą STM32.
+Projekt przetwornicy step-up (boost) zaprojektowany w programie Altium Designer. Układ podnosi napięcie z 5V na wyższe (regulowane) i potrafi oddać około 10W mocy. Zamiast dedykowanego układu scalonego do przetwornic, sercem układu jest mikrokontroler STM32, który steruje pętlą sprzężenia zwrotnego.
+
+Parametry:
+
+Topologia: Boost
+Szacowana moc: ~10W
+Częstotliwość kluczowania: 250 kHz
+Mikrokontroler: STM32
+EDA: Altium Designer (2 warstwy, ścieżki podwyższonej mocy i wylewki masy)
+
+Sterowanie opiera się na sprzętowym wzmacniaczu błędu podłączonym pod ADC:
+
+Napięcie z wyjścia przetwornicy trafia na dzielnik z potencjometrem wieloobrotowym, którym ustawia się docelowe napięcie.
+Sygnał z suwaka potencjometru wchodzi na wejście odwracające wzmacniacza operacyjnego (pracującego w układzie różnicowym).
+Na wejście nieodwracające podawane jest stabilne napięcie referencyjne 3.3V.
+Wzmacniacz sprzętowo odejmuje te wartości – na jego wyjściu pojawia się tylko sygnał błędu.
+Sygnał błędu jest czytany przez ADC w STM32.
+Na podstawie tego odczytu algorytm w procesorze dobiera współczynnik wypełnienia dla sygnału PWM (250 kHz).
+PWM trafia na driver MOSFET, który zapewnia odpowiedni prąd do szybkiego przeładowania bramki tranzystora kluczującego.
 
 <img width="1097" height="852" alt="image" src="https://github.com/user-attachments/assets/7b984dc8-2806-443e-bba1-1e1183848f11" />
 
