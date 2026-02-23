@@ -4,9 +4,13 @@ Projekt przetwornicy step-up (boost) zaprojektowany w programie Altium Designer.
 Parametry:
 
 Topologia: Boost
+
 Szacowana moc: ~10W
+
 Częstotliwość kluczowania: 250 kHz
+
 Mikrokontroler: STM32
+
 EDA: Altium Designer (2 warstwy, ścieżki podwyższonej mocy i wylewki masy)
 
 Sterowanie opiera się na sprzętowym wzmacniaczu błędu podłączonym pod ADC:
