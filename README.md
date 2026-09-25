@@ -24,16 +24,17 @@ Celem projektu było zaprojektowanie oraz analiza przetwornicy DC-DC typu Boost 
 <img width="1179" height="670" alt="image" src="https://github.com/user-attachments/assets/f0ffd8bc-015d-4971-af88-e17f7d6aec61" />
 
 
-Wynik pomiarów:
-Z zamierzonych 250kHz uzyskano 235kHz a Ripple voltage wynosi 228Vpp.
+### Wynik pomiarów:
+* **Częstotliwość przełączania:** Zamiast zakładanych 250 kHz uzyskano **235 kHz**.
+* **Tętnienia napięcia wyjściowego (ripple voltage):** Wynoszą **228 mVpp**.
 <img width="1024" height="600" alt="Vout" src="https://github.com/user-attachments/assets/38be7efa-ac04-4d85-9353-7347566a029a" />
 
-Przy obciążeniem 0.6A napiecie wynosi 23.37V i utrzymuje sie stabilnie na tym poziomie dopóki obciazenie jest mniejsze niż 0.6A. Napiecie 23.37V zamiast 24 wynika pewnie z niedokładności rezystancji rezystorów sprzeżenia zwrotnego.
+* **Praca przy obciążeniu znamionowym (0,6 A):** Napięcie wynosi **23,37 V** i utrzymuje się na stabilnym poziomie dla prądów do 0,6 A. Różnica względem zakładanych 24 V wynika z tolerancji rezystorów w dzielniku sprzężenia zwrotnego.
 <img width="1289" height="679" alt="image" src="https://github.com/user-attachments/assets/16b8965c-fb95-4bf8-8f4b-1c5892833354" />
 <img width="1283" height="660" alt="image" src="https://github.com/user-attachments/assets/99821b92-70c7-4874-911c-da424ef5d1eb" />
 
 
-Przy obciążeniem 0.67A napiecie siada do 22.40V 
+* **Praca przy przeciążeniu (0,67 A):** Przy obciążeniu prądem 0,67 A napięcie wyjściowe spada do **22,40 V**.
 <img width="1284" height="770" alt="image" src="https://github.com/user-attachments/assets/c2c4e868-5580-4416-84f0-dd48cf285138" />
 <img width="1297" height="719" alt="image" src="https://github.com/user-attachments/assets/cc437050-5d2e-4b04-b2cf-b1df4b60e11e" />
 
