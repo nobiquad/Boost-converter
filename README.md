@@ -9,7 +9,7 @@ Celem projektu było zaprojektowanie oraz analiza przetwornicy DC-DC typu Boost 
 * **Napięcie wyjściowe ($V_0$):** 24 V
 * **Prąd wyjściowy ($I_0$):** 0,6 A
 * **Częstotliwość przełączania ($f_{sw}$):** 250 kHz
-* **Maksymalne tętnienia napięcia wyjściowego ($\Delta V_0$):** < 0,1 V
+* **Maksymalne tętnienia napięcia wyjściowego ($\Delta V_0$):** ~ 0,1 V
 
 **Skrypt MATLAB realizuje:**
 
