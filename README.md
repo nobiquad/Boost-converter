@@ -1,4 +1,15 @@
 # Boost-converter
+###Cel i specyfikacja projektu
+
+Celem projektu było zaprojektowanie oraz analiza przetwornicy DC-DC typu Boost pracującej w trybie CCM (*Continuous Conduction Mode*).
+
+**Główne parametry pracy:**
+* **Napięcie wejściowe ($V_{in}$):** 12 V
+* **Napięcie wyjściowe ($V_0$):** 24 V
+* **Prąd wyjściowy ($I_0$):** 0,6 A
+* **Częstotliwość przełączania ($f_{sw}$):** 250 kHz
+* **Maksymalne tętnienia napięcia wyjściowego ($\Delta V_0$):** < 0,1 V
+
 **Skrypt MATLAB realizuje:**
 
 * **Wyznaczenie parametrów pracy oraz tętnień** przetwornicy DC-DC (Boost).
