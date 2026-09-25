@@ -4,6 +4,7 @@
 Celem projektu było zaprojektowanie oraz analiza przetwornicy DC-DC typu Boost pracującej w trybie CCM (*Continuous Conduction Mode*).
 
 **Główne parametry pracy:**
+* **Kontroler PWM:** UC3843N
 * **Napięcie wejściowe ($V_{in}$):** 12 V
 * **Napięcie wyjściowe ($V_0$):** 24 V
 * **Prąd wyjściowy ($I_0$):** 0,6 A
