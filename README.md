@@ -1,5 +1,5 @@
 # Boost-converter
-###Cel i specyfikacja projektu
+### Cel i specyfikacja projektu
 
 Celem projektu było zaprojektowanie oraz analiza przetwornicy DC-DC typu Boost pracującej w trybie CCM (*Continuous Conduction Mode*).
 
